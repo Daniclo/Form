@@ -42,7 +42,7 @@ public class ControllerFormulario {
         String guardaApellido = apellidos.getText();
         String guardaColor = String.valueOf(color.getValue());
         String guardaFecha = String.valueOf(fecha.getValue());
-        File f = new File("C:\\Users\\Daniel\\IdeaProjects\\Formulario\\src\\main\\resources\\com\\example\\formulario\\datos.txt");
+        File f = new File("src/main/resources/com/example/formulario/datos.txt");
         FileWriter salida = new FileWriter(f);
         salida.write(guardaNombre + "\n" + guardaApellido + "\n" + guardaColor + "\n" + guardaFecha);
         salida.close();
@@ -55,7 +55,7 @@ public class ControllerFormulario {
     @FXML
     protected void onClickIniciarSesion(ActionEvent event){
         try {
-            File f = new File("C:\\Users\\Daniel\\IdeaProjects\\Formulario\\src\\main\\resources\\com\\example\\formulario\\datos.txt");
+            File f = new File("src/main/resources/com/example/formulario/datos.txt");
             Scanner leer = new Scanner(f);
             String guardarNombre = leer.nextLine();
             String guardarApellidos = leer.nextLine();
