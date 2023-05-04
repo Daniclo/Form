@@ -16,5 +16,6 @@
         <DatePicker fx:id="fecha" layoutX="138.0" layoutY="209.0" />
         <Label layoutX="20.0" layoutY="213.0" text="Fecha de nacimiento:" />
       <Button layoutX="216.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickIniciarSesion" text="Iniciar sesión" />
+      <Label fx:id="textoError" layoutX="60.0" layoutY="315.0" textFill="RED" />
     </children>
 </AnchorPane>
