@@ -3,11 +3,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formulario.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formulario.ControllerFormulario">
     <children>
         <ColorPicker fx:id="color" layoutX="130.0" layoutY="157.0" />
         <Label layoutX="14.0" layoutY="14.0" text="Introduce tus datos" />
-        <Button layoutX="138.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickGuardaDatos" text="Enviar datos" />
+        <Button layoutX="90.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickGuardaDatos" text="Enviar datos" />
         <Label layoutX="27.0" layoutY="50.0" text="Nombre:" />
         <TextField fx:id="nombre" layoutX="102.0" layoutY="46.0" />
         <TextField fx:id="apellidos" layoutX="102.0" layoutY="99.0" />
@@ -15,5 +15,6 @@
         <Label layoutX="26.0" layoutY="157.0" prefHeight="24.0" prefWidth="93.0" text="Color favorito:" />
         <DatePicker fx:id="fecha" layoutX="138.0" layoutY="209.0" />
         <Label layoutX="20.0" layoutY="213.0" text="Fecha de nacimiento:" />
+      <Button layoutX="216.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickIniciarSesion" text="Iniciar sesión" />
     </children>
 </AnchorPane>
